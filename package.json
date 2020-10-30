@@ -1,0 +1,22 @@
+{
+  "name": "2020-05-midterms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --watch-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbreviatedman/2020-05-midterms-solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbreviatedman/2020-05-midterms-solution/issues"
+  },
+  "homepage": "https://github.com/abbreviatedman/2020-05-midterms-solution#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  }
+}
