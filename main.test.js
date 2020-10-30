@@ -1,9 +1,9 @@
 const {
-  isValidPassword, // tweaked to be harder
-  onlyCs, // new
-  countBs, // slightly tweaked
-  deleteMiddleLetters, // same
-  lastIndexOfPunctuation, // tweaked to be harder
+  isValidPassword,
+  onlyCs,
+  countBs,
+  deleteMiddleLetters,
+  lastIndexOfPunctuation,
   getCenturies,
 } = require('./main.js')
 
