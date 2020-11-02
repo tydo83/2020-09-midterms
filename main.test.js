@@ -1,9 +1,9 @@
 const {
-  isValidPassword,
-  onlyCs,
-  countBs,
-  deleteMiddleLetters,
-  lastIndexOfPunctuation,
+  isValidPassword, // tweaked to be harder
+  onlyCs, // new
+  countBs, // slightly tweaked
+  lastIndexOfPunctuation, // tweaked to be harder
+  deleteMiddleLetters, // same
   getCenturies,
 } = require('./main.js')
 
@@ -15,14 +15,14 @@ describe('isValidPassword', () => {
     expect(isValidPassword('bad password')).toBe(false);
   })
 
-  it(`returns false if the given string's length is less than 12 characters`, () => {
-    expect(isValidPassword('shorty')).toBe(false);
-    expect(isValidPassword('ritemoarpls')).toBe(false);
-  })
-
   it(`returns false if the given string has a "." in it`, () => {
     expect(isValidPassword('colin.jaffe@codeimmersives.com')).toBe(false);
     expect(isValidPassword('Inconceivable.')).toBe(false);
+  })
+
+  it(`returns false if the given string's length is less than 12 characters`, () => {
+    expect(isValidPassword('shorty')).toBe(false);
+    expect(isValidPassword('ritemoarpls')).toBe(false);
   })
 
   it(`returns true otherwise`, () => {
@@ -89,26 +89,6 @@ describe('countBs', () => {
   })
 })
 
-describe('deleteMiddleLetters', () => {
-  it(`deletes the middle letter from a word, returning the resulting string`, () => {
-    const str1 = 'hello';
-    const result1 = 'helo';
-    const str2 = 'goodbye';
-    const result2 = 'goobye';
-    expect(deleteMiddleLetters(str1)).toBe(result1);
-    expect(deleteMiddleLetters(str2)).toBe(result2);
-  })
-
-  it(`deletes the middle two letters from a string with an even number of characters`, () => {
-    const str1 = 'yessir';
-    const result1 = 'yeir';
-    const str2 = 'oh hello there';
-    const result2 = 'oh hel there';
-    expect(deleteMiddleLetters(str1)).toBe(result1);
-    expect(deleteMiddleLetters(str2)).toBe(result2);
-  })
-})
-
 describe('lastIndexOfPunctuation', () => {
   it(`returns the last index of a period`, () => {
     const str1 = `Oh yeah.`;
@@ -164,7 +144,30 @@ describe('lastIndexOfPunctuation', () => {
     expect(lastIndexOfPunctuation(noSpace1)).toBe(-1)
     expect(lastIndexOfPunctuation(noSpace2)).toBe(-1)
   })
-});
+})
+
+describe('deleteMiddleLetters', () => {
+  it(`deletes the middle letter from a word, returning the resulting string`, () => {
+    const str1 = 'hello';
+    const result1 = 'helo';
+    const str2 = 'goodbye';
+    const result2 = 'goobye';
+    expect(deleteMiddleLetters(str1)).toBe(result1);
+    expect(deleteMiddleLetters(str2)).toBe(result2);
+  })
+
+  it(`deletes the middle two letters from a string with an even number of characters`, () => {
+    const str1 = 'four';
+    const result1 = 'fr';
+    const str2 = 'yessir';
+    const result2 = 'yeir';
+    const str3 = 'oh hello there';
+    const result3 = 'oh hel there';
+    expect(deleteMiddleLetters(str1)).toBe(result1);
+    expect(deleteMiddleLetters(str2)).toBe(result2);
+    expect(deleteMiddleLetters(str3)).toBe(result3);
+  })
+})
 
 describe('getCenturies', () => {
   it(`returns century strings for the 11th-20th centuries`, () => {
