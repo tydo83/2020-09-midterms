@@ -1,5 +1,13 @@
 # 2020-09 Term 1 Midterm Exam
 
+### General Tips
+
+* **You can absolutely research your JavaScript.** You don't have to have how `.slice` works memorized. It may worm its way into your brain eventually, but for many developers, they don't want to or can't memorize code; it's always a friendly internet search away, right?
+* This test is to tell us how you're doing with these concepts so we know what to focus on the rest of the term. It is not a judgement, but a diagnostic.
+* This is a very challenging set of exercises and you **are not expected to finish**. Don't get discouraged!
+* You can go in any order. Don't stare at one problem for too long! **Each problem 1/4 of the way completed tells us more about how you're doing than one problem 3/4 completed.**
+* You can also do the tests **within** a problem in any order.
+* And if you're halfway through the problem and feeling stuck, move on. You don't have to get the whole set of tests green.
 
 
 ### isValidPassword
