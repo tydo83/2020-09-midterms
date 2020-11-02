@@ -3,11 +3,13 @@
 ### General Tips
 
 * **You can absolutely research your JavaScript.** You don't have to have how `.slice` works memorized. It may worm its way into your brain eventually, but for many developers, they don't want to or can't memorize code; it's always a friendly internet search away, right?
-* This test is to tell us how you're doing with these concepts so we know what to focus on the rest of the term. It is not a judgement, but a diagnostic.
-* This is a very challenging set of exercises and you **are not expected to finish**. Don't get discouraged!
-* You can go in any order. Don't stare at one problem for too long! **Each problem 1/4 of the way completed tells us more about how you're doing than one problem 3/4 completed.**
-* You can also do the tests **within** a problem in any order.
-* And if you're halfway through the problem and feeling stuck, move on. You don't have to get the whole set of tests green.
+* **This test is not a judgement, but a diagnostic.** It's purpose is to tell us how you're doing with these concepts so we know what to focus on the rest of the term. The more info we have, the better we can help you get to Term 2 and beyond!
+* This is a very challenging set of exercises, and **you are not expected to finish**. Don't get discouraged!
+* Problems (as well as the sub-problems within each exercise) often **illuminate and build upon each other**. This is one reason among many to listen to the next tip.
+* **You can go in any order.** Don't stare at one problem for too long! Each problem 1/4 of the way completed tells us more about how you're doing than one problem 3/4 completed.
+* You can also do the tests **within** a problem in any order. **Think of each check-mark as an individual question.** These sub-problems are often dealing with different kinds of inputs, and really are unique challenges even within their problem. Celebrate when you get one, and when you don't, move on to the next.
+* And if you're halfway through the problem and feeling stuck, **move on**. You don't have to get an exercise's whole set of tests green.
+* Relax and have fun. Here are your tasks; see you on the other side!
 
 
 ### isValidPassword
